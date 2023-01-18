@@ -1,13 +1,13 @@
-%% Scene Perception fMRI 
+% Scene Perception fMRI 
 % 1 run, repeated 8 times
 % Aysu Nur KOÇ - 2022 - Neuroscience/Bilkent University
 
-%% This code is amateurish, but it works. I could make improvements but I had started taking participants to my experiment.
-%% Therefore I did not re-write it to keep it the same across all participants.
+% This code is amateurish, but it works. I could make improvements but I had started taking participants to my experiment.
+% Therefore I did not re-write it to keep it the same across all participants.
 
-%% In our MR setup, the trigger device sends a "6" at each TR. 
-%% Therefore the experiment start is triggered by the first "6" input, and I synchroncize the data based on this, by keeping the necessary information in our output.
-%% Such as onsets, durations, responses... all based on experiment start at the first TR.
+% In our MR setup, the trigger device sends a "6" at each TR. 
+% Therefore the experiment start is triggered by the first "6" input, and I synchroncize the data based on this, by keeping the necessary information in our output.
+% Such as onsets, durations, responses... all based on experiment start at the first TR.
 
 % Based on the stimuli number 
 % the categories are as follows:
@@ -35,7 +35,6 @@ promptright = [winrect(3)/6 winrect(4)/4 winrect(3)*2/6 winrect(4)*3/4];
 promptleft = [winrect(3)*4/6 winrect(4)/4 winrect(3)*5/6 winrect(4)*3/4];
 %above right and left are calculated the opposite of the practice session
 %bc it will be mirrored horizontally.
-%% FPS, IFI and VBL %%From Hilal's code???
 fps=Screen('FrameRate',win); % frames per second
 ifi=Screen('GetFlipInterval', win);
 if fps==0
