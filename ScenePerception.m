@@ -1,9 +1,14 @@
-2
 %% Scene Perception fMRI 
 % 1 run, repeated 8 times
 % Aysu Nur KOÇ - 2022 - Neuroscience/Bilkent University
 
-%%% DEFINE GREY WHITE BLACK ETC
+%% This code is amateurish, but it works. I could make improvements but I had started taking participants to my experiment.
+%% Therefore I did not re-write it to keep it the same across all participants.
+
+%% In our MR setup, the trigger device sends a "6" at each TR. 
+%% Therefore the experiment start is triggered by the first "6" input, and I synchroncize the data based on this, by keeping the necessary information in our output.
+%% Such as onsets, durations, responses... all based on experiment start at the first TR.
+
 % Based on the stimuli number 
 % the categories are as follows:
 %   1-8 access points    9-16 circulation    17-24 restrooms     25-32 eating/seating areas
